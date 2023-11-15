@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _printf - Printf function
+ * @format: format.
+ * Return: Printed chars.
+ */
+
 int _printf(const char *format, ...)
 {
 	int chara_print = 0;
@@ -42,7 +48,6 @@ int _printf(const char *format, ...)
 
 				while (str[str_len] != '\0')
 					str_len++;
-
 				write(1, str, str_len);
 				chara_print += str_len;
 			}
